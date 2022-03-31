@@ -24,6 +24,10 @@ public class AlunoDTO {
         this.bootcamp = bootcamp;
     }
 
+    public Aluno paraAluno() {
+        return new Aluno(nome, email, bootcamp);
+    }
+
     public String getNome() {
         return nome;
     }
