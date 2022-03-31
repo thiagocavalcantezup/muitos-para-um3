@@ -26,7 +26,7 @@ public class CustomExceptionHandler {
         List<FieldError> fieldErrors = ex.getBindingResult().getFieldErrors();
         Integer totalErros = fieldErrors.size();
         String palavraErro = totalErros == 1 ? "erro" : "erros";
-        String mensagemGeral = "Validação falhou com " + totalErros + " " + palavraErro;
+        String mensagemGeral = "Validação falhou com " + totalErros + " " + palavraErro + ".";
 
         ErroPadronizado erroPadronizado = new ErroPadronizado(
             codigoHttp, mensagemHttp, mensagemGeral
